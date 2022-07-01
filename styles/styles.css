@@ -1,0 +1,358 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Google fonts 的放置區域 */
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.yellow {
+  position: absolute;
+  top: -35vh;
+  right: 0;
+  z-index: -5;
+  width: 40vw;
+  height: 150vh;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  width: 70%;
+  list-style-type: none;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  font-size: 1.5rem;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* 第二頁的 CSS 屬性設定 */
+  /* 第三頁的 CSS 屬性設定 */
+}
+
+main section.left {
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 800px;
+          flex: 5 1 800px;
+  padding: 0.5rem 2rem 2.5rem 1.5rem;
+}
+
+main section.left h1 {
+  font-size: 3rem;
+  color: #E59700;
+}
+
+main section.left p.girl {
+  font-size: 1.25rem;
+  padding: 4rem 0rem 1rem 0rem;
+}
+
+main section.left p {
+  font-size: 1.25rem;
+  padding: 1rem 0rem;
+}
+
+main section.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  position: relative;
+}
+
+main section.right img {
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: 3vh;
+  right: 13vw;
+  -webkit-transform: translateY(8%);
+          transform: translateY(8%);
+}
+
+main section.right div.box1 {
+  background-color: #E1FDFF;
+  width: 20vw;
+  height: 4vw;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+}
+
+main section.right div.box2 {
+  background-color: #8CD9DE;
+  width: 20vw;
+  height: 4vw;
+  position: absolute;
+  z-index: -2;
+  bottom: 8px;
+  left: 105px;
+}
+
+main section.table {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 800px;
+          flex: 3 1 800px;
+  padding: 1rem 2rem;
+}
+
+main section.table table {
+  border-collapse: collapse;
+}
+
+main section.table table tr {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+main section.table table tr td {
+  padding: 0.5rem;
+}
+
+main section.table table tr td ul li {
+  list-style-type: none;
+}
+
+main section.table table tr td img {
+  width: 6vw;
+  height: 6vw;
+}
+
+main section.table table tr:hover {
+  background-color: #fde9c1;
+}
+
+main section.picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  position: relative;
+}
+
+main section.picture img {
+  width: 30vw;
+}
+
+main section.picture div.yellowRect {
+  width: 30vw;
+  height: 65vh;
+  background-color: #f8d287;
+  position: absolute;
+  top: 25px;
+  left: 40px;
+  z-index: -2;
+}
+
+main section.form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 650px;
+          flex: 1 1 650px;
+  padding-top: 1.5rem;
+}
+
+main section.form form {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.form form div {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section.form form div label {
+  font-size: 1.15rem;
+  color: #FFA800;
+  margin-right: 1.25rem;
+}
+
+main section.form form div input, main section.form form div textarea {
+  background-color: #F1F1F1;
+  color: black;
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem;
+  width: 80%;
+}
+
+main section.form form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #e2e0e0;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+main div.line {
+  background-color: #D2D1D1;
+  width: 2px;
+  margin-right: 4rem;
+}
+
+main section.contact {
+  padding-top: 1.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 650px;
+          flex: 1 1 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main section.contact div.contentTitle h3 {
+  color: #FFA800;
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+}
+
+main section.contact div.myContent h3 {
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+}
+
+main section.contact div.myContent img {
+  width: 3vw;
+  height: 3vw;
+  margin: 1rem 0.5rem;
+}
+
+.active {
+  color: #FAA500;
+}
+
+footer {
+  padding: 0rem 0rem 0rem 2rem;
+  /* 第二頁的 footer 樣式，寫於行內*/
+}
+
+footer a {
+  padding: 0rem 0.25rem;
+}
+
+footer img {
+  width: 3vw;
+  height: 3vw;
+}
+
+/* 以下是動畫的效果設定 */
+@media screen and (max-width: 1300px) {
+  .yellow {
+    opacity: 0.3;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  header nav ul li {
+    padding: 1rem 0rem;
+    border-bottom: 1px solid lightslategrey;
+  }
+  main section.right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.right img {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    width: 40vw;
+    height: 40vw;
+  }
+  main section.picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.picture img {
+    width: 60vw;
+  }
+  main section.picture div.yellowRect {
+    display: none;
+  }
+  main div.line {
+    width: 0px;
+  }
+  main section.contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2.5rem 0rem 1rem 0rem;
+  }
+  footer img {
+    width: 6vw;
+    height: 6vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

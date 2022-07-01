@@ -1,0 +1,181 @@
+@charset "UTF-8";
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #FFD27A;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#first {
+  stroke-dasharray: 486px;
+  stroke-dashoffset: 486px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards;
+          animation: fadeInside 0.6s ease-in forwards;
+}
+
+#second {
+  stroke-dasharray: 373px;
+  stroke-dashoffset: 373px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.2s;
+          animation: fadeInside 0.6s ease-in forwards 0.2s;
+}
+
+#third {
+  stroke-dasharray: 290px;
+  stroke-dashoffset: 290px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.4s;
+          animation: fadeInside 0.6s ease-in forwards 0.4s;
+}
+
+#fourth {
+  stroke-dasharray: 426px;
+  stroke-dashoffset: 426px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.6s;
+          animation: fadeInside 0.6s ease-in forwards 0.6s;
+}
+
+#fifth {
+  stroke-dasharray: 430px;
+  stroke-dashoffset: 430px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.8s;
+          animation: fadeInside 0.6s ease-in forwards 0.8s;
+}
+
+#sixth {
+  stroke-dasharray: 229px;
+  stroke-dashoffset: 229px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1s;
+          animation: fadeInside 0.6s ease-in forwards 1s;
+}
+
+#seventh {
+  stroke-dasharray: 513px;
+  stroke-dashoffset: 513px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.2s;
+          animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+#eighth {
+  stroke-dasharray: 376px;
+  stroke-dashoffset: 376px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.4s;
+          animation: fadeInside 0.6s ease-in forwards 1.4s;
+}
+
+#ninth {
+  stroke-dasharray: 424px;
+  stroke-dashoffset: 424px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.6s;
+          animation: fadeInside 0.6s ease-in forwards 1.6s;
+}
+
+#tenth {
+  stroke-dasharray: 377px;
+  stroke-dashoffset: 377px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.8s;
+          animation: fadeInside 0.6s ease-in forwards 1.8s;
+}
+
+#eleventh {
+  stroke-dasharray: 547px;
+  stroke-dashoffset: 547px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 2.0s;
+          animation: fadeInside 0.6s ease-in forwards 2.0s;
+}
+
+#twelfth {
+  stroke-dasharray: 1611px;
+  stroke-dashoffset: 1611px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards;
+          animation: fadeInside 0.6s ease-in forwards;
+}
+
+#thirteenth {
+  stroke-dasharray: 1228px;
+  stroke-dashoffset: 1228px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.3s;
+          animation: fadeInside 0.6s ease-in forwards 0.3s;
+}
+
+#fourteenth {
+  stroke-dasharray: 1199px;
+  stroke-dashoffset: 1100px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.6s;
+          animation: fadeInside 0.6s ease-in forwards 0.6s;
+}
+
+#fifteenth {
+  stroke-dasharray: 1471px;
+  stroke-dashoffset: 1471px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 0.9s;
+          animation: fadeInside 0.6s ease-in forwards 0.9s;
+}
+
+#sixteenth {
+  stroke-dasharray: 617px;
+  stroke-dashoffset: 617px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.2s;
+          animation: fadeInside 0.6s ease-in forwards 1.2s;
+}
+
+#seventeenth {
+  stroke-dasharray: 1334px;
+  stroke-dashoffset: 1334px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.5s;
+          animation: fadeInside 0.6s ease-in forwards 1.5s;
+}
+
+#eighteenth {
+  stroke-dasharray: 1270px;
+  stroke-dashoffset: 1270px;
+  -webkit-animation: fadeInside 0.6s ease-in forwards 1.8s;
+          animation: fadeInside 0.6s ease-in forwards 1.8s;
+}
+
+/* 這邊設定在動畫跑完之後會填滿中間簍空的文字 */
+svg {
+  -webkit-animation: fill 1s ease-in forwards 1.9s;
+          animation: fill 1s ease-in forwards 1.9s;
+}
+
+@-webkit-keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@-webkit-keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #767676;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #767676;
+  }
+}
+/*# sourceMappingURL=animation.css.map */
